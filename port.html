@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배지훈 포트폴리오</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #4e73df, #1cc88a);
+      color: white;
+    }
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      background-color: #343a40;
+      color: white;
+    }
+    .btn-custom {
+      background-color: #1cc88a;
+      color: white;
+    }
+    .btn-custom:hover {
+      background-color: #17a673;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="display-4">배지훈 포트폴리오</h1>
+    <p class="lead">웹 기반 AI 애플리케이션 개발자</p>
+  </header>
+
+  <main class="container my-5">
+    <section>
+      <h2 class="mb-4">📌 주요 프로젝트</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title">1. 안면 인식 시스템</h5>
+              <p class="card-text">
+                React와 Flask, MediaPipe를 활용해 웹캠을 통한 얼굴 등록 및 인식 기능을 구현한 AI 시스템입니다.
+              </p>
+              <ul>
+                <li>실시간 웹캠 캡처 및 Canvas API</li>
+                <li>MediaPipe Face Detection & Mesh</li>
+                <li>Base64 이미지 처리 및 JSON 저장</li>
+                <li>ngrok을 통한 외부 접속 지원</li>
+              </ul>
+              <a href="https://github.com/your-id/face-recognition-app" class="btn btn-custom" target="_blank">GitHub 코드 보기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title">2. YouTube AI 검색 시스템</h5>
+              <p class="card-text">
+                YouTube Data API를 활용하여 사용자가 입력한 키워드에 맞는 동영상을 검색하고 카드형 UI로 보여주는 검색 웹앱입니다.
+              </p>
+              <ul>
+                <li>React 기반 프론트엔드 + Flask 백엔드</li>
+                <li>YouTube API 호출 및 쿼터 관리</li>
+                <li>검색 실패/성공 처리 및 로딩 애니메이션</li>
+              </ul>
+              <a href="https://github.com/your-id/youtube-search-ai" class="btn btn-custom" target="_blank">GitHub 코드 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <h2 class="mb-3">📞 연락처</h2>
+      <p>전화: 010-9958-1075</p>
+      <p>이메일: qowlgns211@naver.com</p>
+      <p>GitHub: <a href="https://github.com/qowlgns211" target="_blank">https://github.com/qowlgns211</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 배지훈. 모든 권리 보유.</p>
+  </footer>
+</body>
+</html>
